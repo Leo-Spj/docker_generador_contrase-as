@@ -1,0 +1,115 @@
+<!-- https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mis estilos CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- boxicons.com -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <main>
+        <section class="bloque_principal">
+            <h1>Password Generator</h1>
+            <form action="">
+                <div class="container_contra_generada">
+                    <textarea class="contra_generada" id="contra_generada">JavaScript not working</textarea>
+                    <button type="button" class="icono_copy" id="icono_copy"><i class='bx bx-copy-alt' ></i></button>
+                </div> 
+
+                <div class="container_opciones">
+                    <div>
+                        <div class="encabezado_rango">
+                            <label for="range">Character Length</label>
+                            <p class="etiqueta_log">10</p>
+                        </div>
+                        
+                        <!-- Barra long de contraseña -->
+                        <div class="inputDiv">                            
+                            <input class="barra_rango" type="range" value="2" min="0" max="12" autocomplete="off" id="range">
+                        </div>
+                    
+                    </div>
+                    
+                    <!-- lista de utiles con ul: -->
+                    <ul class="lista_seguridad">
+                        <li>
+                            <input class="colorverde" type="checkbox" name="include-uppercase" id="include-uppercase" checked>
+                            <label for="include-uppercase">Include Uppercase Letters</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="include-lowercase" id="include-lowercase" checked>
+                            <label for="include-lowercase">Include Lowercase Letters</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="include-numbers" id="include-numbers" checked>
+                            <label for="include-numbers">Include Numbers</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="include-symbols" id="include-symbols" >
+                        <label for="include-symbols">Include Symbols</label>
+                        </li>
+                    </ul>
+
+                    <div class="container_fortaleza">
+                        <p class="titulo_fuerza">STRENGTH</p>
+
+                        <div class="seccion_rangos_niv">
+                            <p class="nivel_fortaleza" id="niv_fort_escrita">MEDIUM</p>
+                            
+                            <div class="bloq_niveles">
+                                <div class="barra_niv barra_n_1 activado " id="br_1"></div>
+                                <div class="barra_niv barra_n_2 activado " id="br_2"></div>
+                                <div class="barra_niv barra_n_3 " id="br_3"></div>
+                                <div class="barra_niv barra_n_4 " id="br_4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container_generar">
+                        <button type="button" class="boton_generar"
+                        id="boton_generar" type="submit">GENERATE <i class='bx bx-right-arrow-alt bx-sm'></i></button>    
+                    </div>
+                </div>
+            </form>
+
+            <div class="contacto">
+                <p class="texto_footer">Created by Leo-Spj - 
+                    <a href="https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh" target="_blank">Frontend Mentor</a> 
+                    Challenge
+                </p>
+
+
+
+                <!-- iconos de redes sociales-->
+                <div class="container_redes">
+                    
+                    <a href="https://github.com/Leo-Spj" target="_blank"><i class='bx bxl-github bx-sm'></i></a>
+                    <a href="https://twitter.com/Leo_Spj" target="_blank"><i class='bx bxl-twitter bx-sm'></i></a>
+                    <a href="https://www.linkedin.com/in/leo-spj/" target="_blank"><i class='bx bxl-linkedin bx-sm'></i></a>
+
+                </div>
+        </section>       
+    </main>
+
+    <!-- Mis scripts -->
+    <script src="index.js"></script>
+
+    
+    
+</body>
+</html>

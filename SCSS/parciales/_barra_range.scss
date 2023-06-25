@@ -1,0 +1,81 @@
+
+.inputDiv{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.barra_rango{
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+.barra_rango:focus {
+  outline: none;
+}
+  
+
+//WEBKIT para nevegadores basados en Chromium.
+
+//bolita:
+.barra_rango,
+.barra_rango::-webkit-slider-runnable-track,
+.barra_rango::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.barra_rango::-webkit-slider-thumb {
+  background-color: $humo;
+  
+  width: 20px;
+  height: 20px;    
+      
+  border-radius: 50%;
+  margin-top: -8px;
+  cursor: pointer;
+}
+.barra_rango::-webkit-slider-thumb:hover{
+  background-color: $plomo_oscuro;
+  border: 2px solid $verde_agua;
+}
+.barra_rango::-webkit-slider-runnable-track {
+  background-color: $plomo_oscuro;
+  height: 5px;
+  -webkit-appearance: none;
+  background-image:linear-gradient(to right, $verde_agua calc(var(--value)*8.333%), $plomo_oscuro 0);
+}
+
+
+//MOZ para Firefox.
+.barra_rango::-moz-range-thumb {
+  background-color: $humo;
+  
+  width: 20px;
+  height: 20px;    
+      
+  border-radius: 50%;
+  margin-top: -8px;
+  cursor: pointer;   
+}
+.barra_rango::-moz-range-thumb:hover{
+  background-color: $plomo_oscuro;
+  border: 2px solid $verde_agua;
+}
+.barra_rango::-moz-range-track {
+  height: 5px;
+  background-color: $plomo_oscuro;
+  
+  -webkit-appearance: none;
+  background-image:linear-gradient(to right, $verde_agua calc(var(--value)*8.333%), $plomo_oscuro 0);
+}
+
+
+//para internte explorer:
+.barra_rango::-ms-track {
+height: 5px;
+}
+.barra_rango::-ms-fill-upper {
+background-color: $plomo_oscuro;
+}
+.barra_rango::-ms-fill-lower {
+background-color: $verde_agua;
+}
